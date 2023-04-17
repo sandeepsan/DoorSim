@@ -1,0 +1,62 @@
+Garage Door Simulation
+Initial State 0
+Set BUTTON_PRESS in CLOSE State
+Starting Upward Motion
+After BUTTON_PRESS State 1
+Set BUTTON_PRESS in OPENING State
+Motion Stop
+After BUTTON_PRESS State 6
+Set BUTTON_PRESS in STOPPED_OPENING State
+Starting Upward Motion
+After BUTTON_PRESS State 1
+Simulate timeout in OPENING State
+Start Motion has timedout
+Motion Stop
+After Timeout in OPENING State, Curren State 4
+Set RESET in FAIL State
+Starting Upward Motion
+After RESET in FAIL State, Current State 1
+Set MOTION_COMPLETED in OPENING State
+Motion Stop
+After MOTION_COMPLETED Current State 2
+Set BUTTON_PRESS in OPENED State
+Starting Downward Motion
+Button Pressed in OPENED State, Current State 3
+Set MOTION_COMPLETED in CLOSING State
+Motion Stop
+After MOTION_COMPLETED Current State 0
+Set BUTTON_PRESS in CLOSE State
+Starting Upward Motion
+After BUTTON_PRESS State 1
+Set MOTION_COMPLETED in OPENING State
+Motion Stop
+After MOTION_COMPLETED Current State 2
+Set BUTTON_PRESS in OPENED State
+Starting Downward Motion
+Button Pressed in OPENED State, Current State 3
+Set SENSOR_TRIGGER in CLOSING State
+Motion Stop
+Sensor triggered in closing state, Current State 5
+Set MOTION_COMPLETED in OPENING State
+After MOTION_COMPLETED Current State 5
+Set BUTTON_PRESS in OPENED State
+Starting Downward Motion
+Button Pressed in OPENED State, Current State 3
+Set BUTTON_PRESS in CLOSING State
+Motion Stop
+Button Pressed in CLOSING State, Current State 5
+Set BUTTON_PRESS in STOPPED_CLOSING State
+Starting Downward Motion
+Button Pressed in STOPPED_CLOSING State, Current State 3
+Simulate timeout in CLOSING State
+Start Motion has timedout
+Motion Stop
+After Timeout in Closing State, Curren State 4
+Starting Upward Motion
+After RESET in Fail State, Current State 1
+Start Motion has timedout
+Garage Door Simulation
+Initial State 0
+Set BUTTON_PRESS in CLOSE State
+Starting Upward Motion
+After BUTTON_PRESS State 1
